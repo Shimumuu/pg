@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Pagina de juego</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <nav id="navegador">
+        <div class="contenedornav">
+            <div id="logo-titulo">
+                <img src="imagenes/logo.png" alt="Logo del sitio" id="logo">
+                <h1 id="titulo">Partida</h1>
+            </div>
+            <ul id="navegador-links">
+                <li><a href="pagina principal.html">Inicio</a></li>
+                <li><a href="perfil1.html">Perfil</a></li>
+                <li><a href="partida.html">Partida</a></li>
+                <li><a href="desarrolladores.html">Desarrolladores</a></li>
+                <li><a href="nuevas reglas.html">Historia y reglas</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="registros usuarios.html">Register</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="general">
+        <div class="panel-lateral">
+            <div class="turno">
+                <h3>Turno:</h3>
+                <p id="indicador-turno">Blancas<img id="blancas-ficha" src="/imagenes/peonblancoequipo.png" alt=""> </p>
+            </div>
+        
+            <div class="oponente">
+                <label for="selector">Oponente:</label>
+                <select id="selector">
+                    <option value="jugador">Jugador</option>
+                    <option value="ia">IA</option>
+                </select>
+            </div>
+        
+            <div class="historial">
+                <h3>Historial de movimientos</h3>
+                <ul id="lista-de-movimientos">
+                    <li> <img src="/imagenes/peon-blanco.png" alt=""> b2 a b4</li>
+                    <li> <img src="/imagenes/peon-negro.png" alt=""> e7 a e6</li>  
+                </ul>
+            </div>
+    
+               
+        
+            <div class="botones-panel">
+                <button id="boton-jugar">Jugar</button>
+                <button id="boton-invitar">Invitar amigo</button>
+                <button id="boton-rendirse">Rendirse</button>
+            </div>
+        </div>
+    <div class="tablero">
+        
+        <div class="coordenadas">
+            <div class="coordenadah">A</div>
+            <div class="coordenadah">B</div>
+            <div class="coordenadah">C</div>
+            <div class="coordenadah">D</div>
+            <div class="coordenadah">E</div>
+            <div class="coordenadah">F</div>
+            <div class="coordenadah">G</div>
+            <div class="coordenadah">H</div>
+        </div>
+
+    <div class="fila">
+        <div class="coordenada">8</div>
+        <div class="blanca"><img src="/imagenes/torre-negra.png" alt=""></div>
+        <div class="negra"><img src="/imagenes/caballo-negro.png" alt=""> </div>
+        <div class="blanca"><img src="/imagenes/alfin-negro.png" alt=""> </div>
+        <div class="negra"><img src="/imagenes/reyna-negra.png" alt=""> </div>
+        <div class="blanca"><img src="/imagenes/rey-negro.png" alt=""> </div>
+        <div class="negra"><img src="/imagenes/alfin-negro.png" alt=""> </div>
+        <div class="blanca"><img src="/imagenes/caballo-negro.png" alt=""> </div>
+        <div class="negra"><img src="/imagenes/torre-negra.png" alt=""> </div>
+        <div class="coordenada">8</div>
+    </div>
+    <div class="fila">
+        <div class="coordenada">7</div>
+        <div class="negra"><img src="/imagenes/peon-negro.png" alt=""></div>
+        <div class="blanca"><img src="/imagenes/peon-negro.png" alt=""></div>
+        <div class="negra"><img src="/imagenes/peon-negro.png" alt=""></div>
+        <div class="blanca"><img src="/imagenes/peon-negro.png" alt=""></div>
+        <div class="negra"></div>
+        <div class="blanca"><img src="/imagenes/negrapeon.png" alt=""></div>
+        <div class="negra"><img src="/imagenes/negrapeon.png" alt=""></div>
+        <div class="blanca"><img src="/imagenes/negrapeon.png" alt=""></div>
+        <div class="coordenada">7</div>
+    </div>
+    <div class="fila">
+        <div class="coordenada">6</div>
+        <div class="blanca"></div>
+        <div class="negra"></div>
+        <div class="blanca"></div>
+        <div class="negra"></div>
+        <div class="blanca"><img src="/imagenes/peon-negro.png" alt=""></div>
+        <div class="negra"></div>
+        <div class="blanca"></div>
+        <div class="negra"></div>
+        <div class="coordenada">6</div>
+    </div>
+    <div class="fila">
+        <div class="coordenada">5</div>
+        <div class="negra"></div>
+        <div class="blanca"></div>
+        <div class="negra"></div>
+        <div class="blanca"></div>
+        <div class="negra"></div>
+        <div class="blanca"></div>
+        <div class="negra"></div>
+        <div class="blanca"></div>
+        <div class="coordenada">5</div>
+    </div>
+    <div class="fila">
+        <div class="coordenada">4</div>
+        <div class="blanca"></div>
+        <div class="negra"><img src="/imagenes/peon-blanco.png" alt=""></div>
+        <div class="blanca"></div>
+        <div class="negra"></div>
+        <div class="blanca"></div>
+        <div class="negra"></div>
+        <div class="blanca"></div>
+        <div class="negra"></div>
+        <div class="coordenada">4</div>
+    </div>
+    <div class="fila">
+        <div class="coordenada">3</div>
+        <div class="negra"></div>
+        <div class="blanca"></div>
+        <div class="negra"></div>
+        <div class="blanca"></div>
+        <div class="negra"></div>
+        <div class="blanca"></div>
+        <div class="negra"></div>
+        <div class="blanca"></div>
+        <div class="coordenada">3</div>
+    </div>
+    <div class="fila">
+        <div class="coordenada">2</div>
+        <div class="blanca"><img src="/imagenes/peon-blanco.png" alt=""></div>
+        <div class="negra"></div>
+        <div class="blanca"><img src="/imagenes/peon-blanco.png" alt=""></div>
+        <div class="negra"><img src="/imagenes/peon-blanco.png" alt=""></div>
+        <div class="blanca"><img src="/imagenes/peon-blanco.png" alt=""></div>
+        <div class="negra"><img src="/imagenes/peon-blanco.png" alt=""></div>
+        <div class="blanca"><img src="/imagenes/peon-blanco.png" alt=""></div>
+        <div class="negra"><img src="/imagenes/peon-blanco.png" alt=""></div>
+        <div class="coordenada">2</div>
+    </div>
+    <div class="fila">
+        <div class="coordenada">1</div>
+        <div class="negra"><img src="/imagenes/torre-blanca.png" alt=""> </div>
+        <div class="blanca"><img src="/imagenes/caballo-blanco.png" alt=""> </div>
+        <div class="negra"><img src="/imagenes/alfin-blanco.png" alt=""> </div>
+        <div class="blanca"><img src="/imagenes/reyna-blanca.png" alt=""> </div>
+        <div class="negra"><img src="/imagenes/rey-blanco.png" alt=""> </div>
+        <div class="blanca"><img src="/imagenes/alfin-blanco.png" alt=""> </div>
+        <div class="negra"><img src="/imagenes/caballo-blanco.png" alt=""> </div>
+        <div class="blanca"><img src="/imagenes/torre-blanca.png" alt=""> </div>
+        <div class="coordenada">1</div>
+    </div>
+    <div class="coordenadas">
+        <div class="coordenadah">A</div>
+        <div class="coordenadah">B</div>
+        <div class="coordenadah">C</div>
+        <div class="coordenadah">D</div>
+        <div class="coordenadah">E</div>
+        <div class="coordenadah">F</div>
+        <div class="coordenadah">G</div>
+        <div class="coordenadah">H</div>
+    </div>
+</div>
+
+</div>
+
+</body>
+</html>
